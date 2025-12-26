@@ -1,0 +1,164 @@
+# Warm Graphite - muted graphite base with warm accents
+colors:
+  # Graphite background scale (cooler grays)
+  bg:         "1c1c1c"
+  bg0:        "1c1c1c"
+  bg1:        "2a2a2a"
+  bg2:        "3a3a3a"
+  bg3:        "4e4e4e"
+  bg4:        "626262"
+
+  # Warm foreground scale
+  fg:         "d0d0d0"
+  fg0:        "e4e4e4"
+  fg1:        "d0d0d0"
+  fg2:        "b2b2b2"
+  fg3:        "949494"
+  fg4:        "767676"
+
+  # Accent colors (from your ANSI 256 palette)
+  coral:      "d75f5f"    # ANSI 167 - errors, deleted
+  sage:       "87af87"    # ANSI 108 - new, success
+  gold:       "d7af5f"    # ANSI 179 - modified, warnings
+  mauve:      "af87af"    # ANSI 139 - user, special
+  teal:       "87afaf"    # ANSI 109 - links, info
+  peach:      "ffd7af"    # ANSI 223 - highlights
+  rose:       "d7afaf"    # ANSI 181 - secondary accent
+  tan:        "d7af87"    # ANSI 180 - tertiary accent
+
+  # Utility colors
+  gray:       "8a8a8a"    # ANSI 245
+  dimgray:    "585858"    # ANSI 240
+
+core:
+  normal_text:
+    foreground: fg
+
+  regular_file: {}
+
+  reset_to_normal: {}
+
+  directory:
+    foreground: teal
+
+  symlink:
+    foreground: mauve
+    font-style: italic
+
+  multi_hard_link:
+    foreground: teal
+    font-style: bold
+
+  fifo:
+    foreground: mauve
+
+  socket:
+    foreground: mauve
+    font-style: bold
+
+  door:
+    foreground: rose
+    font-style: bold
+
+  block_device:
+    foreground: gold
+    font-style: bold
+
+  character_device:
+    foreground: tan
+    font-style: italic
+
+  broken_symlink:
+    foreground: coral
+    font-style: italic
+
+  missing_symlink_target:
+    foreground: fg
+    background: coral
+
+  setuid:
+    foreground: fg0
+    background: coral
+
+  setgid:
+    foreground: bg
+    background: gold
+
+  file_with_capability:
+    foreground: bg
+    background: coral
+
+  sticky_other_writable:
+    foreground: fg
+    background: teal
+    font-style: italic
+
+  other_writable:
+    foreground: sage
+    font-style: bold
+
+  sticky:
+    foreground: fg
+    background: teal
+
+  executable_file:
+    foreground: sage
+    font-style: bold
+
+text:
+  special:
+    foreground: peach
+    font-style: bold
+
+  todo:
+    foreground: sage
+
+  licenses:
+    foreground: fg3
+    font-style: italic
+
+  configuration:
+    foreground: gold
+
+  other:
+    foreground: fg2
+
+markup:
+  foreground: tan
+
+programming:
+  source:
+    foreground: sage
+
+  tooling:
+    foreground: teal
+    font-style: italic
+
+    continuous-integration:
+      foreground: gold
+
+media:
+  foreground: rose
+
+  video:
+    foreground: mauve
+    font-style: bold
+
+office:
+  foreground: teal
+
+archives:
+  foreground: gold
+  font-style: underline
+
+  images:
+    foreground: tan
+    font-style: bold
+
+executable:
+  foreground: sage
+  font-style: bold
+
+unimportant:
+  foreground: dimgray
+  font-style: italic

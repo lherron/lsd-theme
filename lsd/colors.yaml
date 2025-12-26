@@ -1,0 +1,48 @@
+# Warm Graphite - lsd UI colors
+# File type colors handled by LS_COLORS via vivid
+---
+user: 139                         # mauve
+group: 243                        # gray
+
+permission:
+  read: 245                       # light gray
+  write: 245                      # light gray
+  exec: 245                       # light gray
+  exec-sticky: 245                # light gray
+  no-access: 240                  # dark gray
+  octal: 245                      # light gray
+  acl: 245                        # light gray
+  context: 245                    # light gray
+
+date:
+  hour-old: 223                   # peach
+  day-old: 181                    # rose
+  older: 245                      # gray
+
+size:
+  none: 241                       # dim gray
+  small: 249                      # light gray
+  medium: 252                     # lighter gray
+  large: 180                      # tan
+
+inode:
+  valid: 243                      # gray
+  invalid: 167                    # coral
+
+links:
+  valid: 109                      # teal
+  invalid: 167                    # coral
+
+tree-edge: 240                    # dark gray
+
+git-status:
+  default: 243                    # gray
+  unmodified: 243                 # gray
+  ignored: 240                    # dark gray
+  new-in-index: 108               # sage
+  new-in-workdir: 108             # sage
+  typechange: 179                 # gold
+  deleted: 167                    # coral
+  renamed: 139                    # mauve
+  modified: 179                   # gold
+  conflicted: 167                 # coral
