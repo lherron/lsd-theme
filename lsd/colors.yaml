@@ -1,37 +1,37 @@
-# Warm Graphite - lsd UI colors
+# Warm Graphite - lsd UI colors (muted monochrome)
 # File type colors handled by LS_COLORS via vivid
 ---
-user: 139                         # mauve
-group: 243                        # gray
+user: 182                         # soft lavender (muted)
+group: 242                        # medium gray
 
 permission:
-  read: 245                       # light gray
-  write: 245                      # light gray
-  exec: 245                       # light gray
-  exec-sticky: 245                # light gray
-  no-access: 240                  # dark gray
-  octal: 245                      # light gray
-  acl: 245                        # light gray
-  context: 245                    # light gray
+  read: 251                       # bright (high contrast for rwx)
+  write: 251                      # bright (high contrast for rwx)
+  exec: 251                       # bright (high contrast for rwx)
+  exec-sticky: 251                # bright (high contrast for rwx)
+  no-access: 242                  # gray (low contrast for ---)
+  octal: 242                      # medium gray
+  acl: 242                        # medium gray
+  context: 242                    # medium gray
 
 date:
-  hour-old: 223                   # peach
-  day-old: 181                    # rose
-  older: 245                      # gray
+  hour-old: 180                   # warm peach/salmon (accent)
+  day-old: 180                    # warm peach/salmon (accent)
+  older: 242                      # medium gray
 
 size:
-  none: 241                       # dim gray
-  small: 249                      # light gray
-  medium: 252                     # lighter gray
-  large: 180                      # tan
+  none: 239                       # dim gray
+  small: 242                      # medium gray (uniform)
+  medium: 242                     # medium gray (uniform)
+  large: 242                      # medium gray (no highlight)
 
 inode:
   valid: 243                      # gray
-  invalid: 167                    # coral
+  invalid: 173                    # coral (terracotta)
 
 links:
-  valid: 109                      # teal
-  invalid: 167                    # coral
+  valid: 73                       # teal (richer)
+  invalid: 173                    # coral (terracotta)
 
 tree-edge: 240                    # dark gray
 
@@ -39,10 +39,10 @@ git-status:
   default: 243                    # gray
   unmodified: 243                 # gray
   ignored: 240                    # dark gray
-  new-in-index: 108               # sage
-  new-in-workdir: 108             # sage
-  typechange: 179                 # gold
-  deleted: 167                    # coral
-  renamed: 139                    # mauve
-  modified: 179                   # gold
-  conflicted: 167                 # coral
+  new-in-index: 107               # sage (lime)
+  new-in-workdir: 107             # sage (lime)
+  typechange: 178                 # gold (cleaner)
+  deleted: 173                    # coral (terracotta)
+  renamed: 140                    # mauve (lavender)
+  modified: 178                   # gold (cleaner)
+  conflicted: 173                 # coral (terracotta)

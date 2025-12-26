@@ -39,17 +39,17 @@ Two complementary systems handle different aspects of coloring:
 
 | Code | Name | Hex | Used For |
 |------|------|-----|----------|
-| 139 | mauve | `#af87af` | user, symlinks, renamed |
+| 140 | mauve | `#af87d7` | user, symlinks, renamed (lavender) |
 | 243 | gray | `#767676` | group, unmodified |
 | 245 | light gray | `#8a8a8a` | permissions, older dates |
 | 240 | dark gray | `#585858` | no-access, ignored, tree-edge |
 | 223 | peach | `#ffd7af` | hour-old dates, highlights |
-| 181 | rose | `#d7afaf` | day-old dates, media |
-| 180 | tan | `#d7af87` | large files, markup |
-| 108 | sage | `#87af87` | executables, git new, source code |
-| 179 | gold | `#d7af5f` | git modified, config, archives |
-| 167 | coral | `#d75f5f` | errors, deleted, conflicts |
-| 109 | teal | `#87afaf` | directories, links, tooling |
+| 174 | rose | `#d78787` | day-old dates, media (salmon) |
+| 186 | tan | `#d7d787` | large files, markup (chartreuse) |
+| 107 | sage | `#87af5f` | executables, git new, source code (lime) |
+| 178 | gold | `#d7af00` | git modified, config, archives (cleaner) |
+| 173 | coral | `#d7875f` | errors, deleted, conflicts (terracotta) |
+| 73 | teal | `#5fafaf` | directories, links, tooling (richer) |
 
 ## Shell Setup
 
