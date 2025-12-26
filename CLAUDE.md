@@ -1,6 +1,6 @@
 # lsd-theme
 
-Custom "Warm Graphite" theme for terminal file listing using [lsd](https://github.com/lsd-rs/lsd) and [vivid](https://github.com/sharkdp/vivid).
+Custom "Warm Graphite" theme for terminal using [lsd](https://github.com/lsd-rs/lsd), [vivid](https://github.com/sharkdp/vivid), and [powerlevel10k](https://github.com/romkatv/powerlevel10k).
 
 ## Repository Structure
 
@@ -9,31 +9,37 @@ lsd-theme/
 ├── lsd/
 │   ├── config.yaml    # lsd settings
 │   └── colors.yaml    # UI metadata colors
-└── vivid/
-    └── themes/
-        └── warm-graphite.yml  # file type colors
+├── vivid/
+│   └── themes/
+│       └── warm-graphite.yml  # file type colors
+└── p10k/
+    └── p10k.zsh       # powerlevel10k prompt config
 ```
 
 ## Installation
 
 ```bash
-# Copy lsd config
-cp lsd/*.yaml ~/.config/lsd/
+just install
+```
 
-# Copy vivid theme
+Or manually:
+```bash
+cp lsd/*.yaml ~/.config/lsd/
 mkdir -p ~/.config/vivid/themes
 cp vivid/themes/warm-graphite.yml ~/.config/vivid/themes/
+ln -sf $(pwd)/p10k/p10k.zsh ~/.p10k.zsh
 ```
 
 ## Architecture
 
-Two complementary systems handle different aspects of coloring:
+Three complementary systems handle different aspects of coloring:
 
 | System | Config Location | Purpose |
 |--------|-----------------|---------|
 | **vivid** | `~/.config/vivid/themes/warm-graphite.yml` | File type colors via `LS_COLORS` |
 | **lsd** | `~/.config/lsd/colors.yaml` | UI metadata (user, group, permissions, dates, git status) |
 | **lsd** | `~/.config/lsd/config.yaml` | Layout and behavior settings |
+| **p10k** | `~/.p10k.zsh` (symlink) | Prompt colors (hostname, dir, git, status) |
 
 ## Color Palette (ANSI 256)
 
